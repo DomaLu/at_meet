@@ -1,0 +1,24 @@
+{
+  "name": "at_meet",
+  "version": "1.0.0",
+  "description": "template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DomaLu/at_meet.git"
+  },
+  "author": "Doma",
+  "license": "MIT",
+  "homepage": "https://github.com/DomaLu/at_meet#readme",
+
+  "scripts": {
+    "start": "npm-run-all --parallel sass-dev serve-dev",
+    "serve-dev": "live-server public/index.html",
+    "sass-dev": "node-sass --watch public/css --output-style expanded --source-map true public/css/main.scss --output public/dest"
+  },
+
+  "devDependencies": {
+    "live-server": "^1.1.0",
+    "node-sass": "^3.10.1",
+    "npm-run-all": "^3.1.1"
+  }
+}
